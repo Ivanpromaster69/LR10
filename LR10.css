@@ -9,11 +9,11 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .mainContent{
-    margin-top: 3%;
+    margin-top: 1%;
     backdrop-filter: blur(5px);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50px;
-    height: 700px;
+    height: 630px;
     width: 500px;
     padding: 1%;
     display: flex;
@@ -82,5 +82,9 @@ button:hover {
         width: 90%;
         font-size: 40px;
         margin-top: 2%;
+    }
+    .mainContent{
+        height: 580px;
+        gap: 20px;
     }
 }
