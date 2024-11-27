@@ -1,6 +1,7 @@
 body {
     background-image: url("gambling.avif");
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -77,7 +78,36 @@ button:hover {
 .visible {
     top: 0;
 }
-@media (max-width: 900px) {
+.return{
+    background-image: url("gameFon.avif");
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease;
+}
+.return:hover{
+    border: 2px solid green;
+}
+.return:active{
+    border: 2px solid red;
+}
+@media (max-width: 1200px) {
+    .mainContent{
+        width: 450px;
+        height: 500px;
+        gap: 20px;
+    }
+    #result{
+        font-size: 20px;
+    }
+    .return{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     #countSpins{
         width: 90%;
         font-size: 40px;
